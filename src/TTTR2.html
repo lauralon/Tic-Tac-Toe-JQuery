@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>R1</title>
+	<link rel="stylesheet" type="text/css" href="TTTR2.css">
+</head>
+<body>
+
+	<div id="allContainer">
+
+		<!-- Absolute Elements -->
+		<div class="noSelect bubble" id="p1TBubble"></div>
+
+		<div class="noSelect bubble" id="p2TBubble"></div>
+
+		<div class="noSelect" id="displaySidesContainer">
+			<div>
+				<span id="displaySidesHead">Randomly Choosing Sides</span>
+				<span class="dot">.</span>
+				<span class="dot">.</span>
+				<span class="dot">.</span>
+			</div>
+
+			<div class="displaySidesPart" id="p1Label">Player 1 is:</div>
+			<div class="displaySidesPart" id="p2Label">Player 2 is:</div>
+			<div class="displaySidesPart" id="p1Choice"></div>
+			<div class="displaySidesPart" id="p2Choice"></div>
+		</div>
+
+		<div class="noSelect winner alignFont" id="p1Winner">Winner!</div>
+		<div class="noSelect winner alignFont" id="p2Winner">Winner!</div>
+
+		<div class="noSelect" id="hintText">
+			<p>
+				Tic Tac Toe is a game where each player strives to play
+				three of their own marks horizontally in a row, vertically
+				in a column, or diagonally across the board.
+			</p>
+			<p>
+				This version works much the same although the
+				computer opponent is practically a master, yet one who is 
+				sensitive to unkind words. If it is taunted, it may become
+				distracted by any offense taken while making its play.
+			</p>
+			<p>
+				Likewise, be sure to steel yourself for any sneers thrown
+				in your direction. Good Luck!
+			</p>			
+			<ul>
+				<li>Hints:</li>
+				<li>Computer may not play well if intimidated.</li>
+				<li>Intimidated players can't taunt during their turn.</li>					
+			</ul>			
+		</div>
+
+		<!-- Left -->
+		<div id="leftContainer">
+
+			<div class="noSelect alignFont" id="topLeft">
+				<div id="hints">Hints</div>				
+
+				<div id="reset">
+					<div id="resetBtn"></div>
+					<div>Reset</div>
+				</div>
+			</div>			
+		
+			<div id="p1Name">
+				<div class="noSelect inputEmphasis">Player 1 Name</div>
+				<input maxlength="10" class="alignFont" type="text" placeholder="Player 1 Name"> 
+			</div>
+
+			<div class="noSelect playerImgContain">
+				<img class="playerImg" src="./assets/images/Brain1.png">
+				<div class="alignFont" id="p1Intim">intimidated!</div>
+				<div class="winEmphasis" id="p1WinEmphasis"></div>								
+			</div>						
+
+			<div class="noSelect alignFont playingContain">
+				<div>Playing:</div>
+				<div class="playingSide">X</div>
+			</div>
+
+			<div class="noSelect alignFont" id="p1Wins">
+				<div>Wins: <span class="winNum">0</span></div>
+			</div>
+
+			<div class="noSelect alignFont taunt">
+				Taunt <span class="tauntName">Player 2</span>
+			</div>
+
+		</div>
+
+		<!-- Center -->
+		<div class="noSelect" id="centerContainer">
+
+			<div class="alignFont noSelect" id="nameMessage">Please Name the Players!</div>
+
+			<div class="alignFont" id="drawDisplay">
+				Draws:
+				<span>1</span>
+			</div>
+
+			<div class="alignFont" id="startBtn">
+				Start Game
+			</div>
+
+			<div id="roundDisplay">
+				Round
+			</div>
+
+			<div id="cellsGrid">
+				<div class="row">
+					<div class="cell" id="cell0"><span class="cellLetter" >V</span></div>
+					<div class="cell" id="cell1"><span class="cellLetter">V</span></div>
+					<div class="cell" id="cell2"><span class="cellLetter">V</span></div>
+				</div>
+				<div class="row">
+					<div class="cell" id="cell3"><span class="cellLetter">V</span></div>
+					<div class="cell" id="cell4"><span class="cellLetter">V</span></div>
+					<div class="cell" id="cell5"><span class="cellLetter">V</span></div>
+				</div>
+				<div class="row">
+					<div class="cell" id="cell6"><span class="cellLetter">V</span></div>
+					<div class="cell" id="cell7"><span class="cellLetter">V</span></div>
+					<div class="cell" id="cell8"><span class="cellLetter">V</span></div>
+				</div>
+
+				<div class="alignFont" id="drawEmphasis">Draw!</div>
+			</div>
+
+		</div>
+
+		<!-- Right -->
+		<div id="rightContainer">
+
+			<div class="noSelect alignFont" id="settings">
+				<div>
+					<div><span id="compSetting">&#9746</span>Computer</div>
+					<div><span>&#9744</span>Human</div>
+				</div>
+			</div>
+
+			<div id="p2Name">
+				<div class="noSelect inputEmphasis">Player 2 Name</div>
+				<input maxlength="10" class="alignFont" type="text" placeholder="Player 2 Name">
+			</div>
+
+			<div class="noSelect playerImgContain">
+				<img class="playerImg" src="./assets/images/Comp.png">
+				<div class="alignFont" id="p2Intim">intimidated!</div>
+				<div class="winEmphasis" id="p2WinEmphasis"></div>				
+			</div>			
+
+			<div class="noSelect alignFont playingContain">
+				<div>Playing:</div>
+				<div class="playingSide">O</div>
+			</div>
+
+			<div class="noSelect alignFont" id="p2Wins">
+				<div>Wins: <span class="winNum">0</span></div>
+			</div>
+
+			<div class="noSelect alignFont taunt">
+				Taunt <span class="tauntName">Player 1</span>
+			</div>
+
+		</div>
+		
+	</div>
+<script type="text/javascript" src="TTTR2.js"></script>
+</body>
+</html>

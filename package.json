@@ -1,0 +1,25 @@
+{
+  "name": "ttt-app",
+  "version": "1.0.0",
+  "description": "tic-tac-toe-jquery",
+  "main": "tttr2.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lauralon/Tic-Tac-Toe-JQuery.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "jquery"
+  ],
+  "author": "lauralon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lauralon/Tic-Tac-Toe-JQuery/issues"
+  },
+  "homepage": "https://github.com/lauralon/Tic-Tac-Toe-JQuery#readme"
+}
