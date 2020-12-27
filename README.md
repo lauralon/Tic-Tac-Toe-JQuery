@@ -1,5 +1,5 @@
 # Tic-Tac-Toe-JQuery
-Tic-Tac-Toe game written in Jquery
+Tic-Tac-Toe game written with Jquery
 
 Tic Tac Toe is a game where each player strives to play
 three of their own marks horizontally in a row, vertically
